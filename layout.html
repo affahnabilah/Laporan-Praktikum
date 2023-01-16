@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Layout</title>
+    <meta content="" name="description">
+	<meta content="" name="keywords">
+	
+	<!--Favicons-->
+	<link href="back.jpg" rel="icon">
+	<link href="back.jpg" rel="icon">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace, arial, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color:#1E90FF;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 665px; /* only for demonstration, should be removed */
+  background-image: url(123.jpg);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-image: url(123.jpg);
+  background-size: cover;
+  height: 100%; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button {
+  background-color: pink;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 50px 50px;
+  cursor: pointer;
+}
+
+/* Style the footer */
+footer {
+  background-color: #1E90FF;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+
+</style>
+</head>
+<body>
+<header>
+  <h3>Profil mahasiswa</h3>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><button onclick="dokumen.location" class="button" target="_blank"><a href="index.html">Home</a></button></li>
+      <li><button onclick="dokumen.location" class="button" target="_blank"><a href="https://affahnabilah.wordpress.com/">Websiteku</a></button></li>
+      <li><button onclick="dokumen.location" class="button" target="_blank"><a href="https://sites.google.com/view/affahsites/beranda">Google site</a></button></li>
+    </ul>
+  </nav>
+  
+<article>
+  <h1 align="center"><font face="courier"><strong> Biodata Diri</strong></font></h1>
+<table  border="3" cellspacing="3" align="center" cellpadding="5" width="800">
+      <tr align="center">
+          <td><font face="courier"><strong>Data Diri</strong></font></td>
+          <td><font face="courier"><strong>Perkenalan</strong></font></td>
+          <td><font face="cambria"><strong>Foto</strong></font></td>
+      </tr>
+	  
+	  <tr>
+        <td>Nama </td>
+        <td>Affah nabilah</td>
+		<td rowspan="20"><img src="img.jpg" alt="img" height="300px" width="300"</td>
+      </tr>
+
+      <tr>
+        <td>Tempat Tanggal Lahir </td>
+        <td>Pasuruan,18-09-2000</td>
+      </tr>
+	  
+	  <tr>
+           <td>alamat </td>
+           <td>Wonorejo-Pauruan</td>
+	  </tr>
+      
+	  <tr>
+           <td>Riwayat Pendidikan</td>
+           <td> 
+		    
+		           <li>TK : al-alawiyah</li>
+                   <li>MI : Nurul Huda 1</li>
+                   <li>MTS: MTSN wonorejo</li>
+                   <li>SMA: SMA Al-Aziz Bangil</li>
+			</td>
+	  </tr>
+	 
+	 <tr>
+     <td>Status</td>
+     <td>Sebagai mahasiswa di Universitas Yudharta Pasuruan</td>
+	 </tr>
+
+     <tr>
+        <td>Program Study</td>
+        <td>Teknik informatika</td>
+     </tr>
+</table>
+</body>
+  <h5 style="color:rgb(5, 5, 4); font-size: 45px; text-align: center;"><b>Bye!</b></h5>  
+</article>
+</section>
+
+<footer>
+  <p>copyright...By'Affah Nabilah'</p>
+</footer>
+
+</body>
+</html>
